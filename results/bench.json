@@ -1,0 +1,132 @@
+{
+ "teacher_ops": [
+  "Conv2d",
+  "GELU",
+  "LayerNorm",
+  "Linear",
+  "MultiheadAttention(softmax)"
+ ],
+ "rows": [
+  {
+   "model": "Teacher ViT (FP32)",
+   "acc": 0.8567,
+   "agree": 1.0,
+   "params": 3194634,
+   "size_mb": 12.799117,
+   "latency_ms": 1.4819585485383868,
+   "unsupported_ops": [
+    "GELU",
+    "LayerNorm",
+    "MultiheadAttention(softmax)"
+   ]
+  },
+  {
+   "model": "student_kd_s0 (FP32)",
+   "acc": 0.8897,
+   "agree": 0.8335999846458435,
+   "size_mb": 1.169173,
+   "latency_ms": 0.48979197163134813,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_kd_s0 (INT8)",
+   "acc": 0.8891,
+   "agree": 0.8324999809265137,
+   "size_mb": 0.298837,
+   "latency_ms": 0.8638534927740693,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_kd_s1 (FP32)",
+   "acc": 0.895,
+   "agree": 0.8396000266075134,
+   "size_mb": 1.169173,
+   "latency_ms": 0.48243789933621883,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_kd_s1 (INT8)",
+   "acc": 0.895,
+   "agree": 0.8395000100135803,
+   "size_mb": 0.298837,
+   "latency_ms": 0.8374585304409266,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_kd_s2 (FP32)",
+   "acc": 0.8929,
+   "agree": 0.8378999829292297,
+   "size_mb": 1.169173,
+   "latency_ms": 0.4797498695552349,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_kd_s2 (INT8)",
+   "acc": 0.8908,
+   "agree": 0.8367000222206116,
+   "size_mb": 0.298837,
+   "latency_ms": 0.8522914722561836,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_scratch_s0 (FP32)",
+   "acc": 0.8999,
+   "agree": 0.838100016117096,
+   "size_mb": 1.169173,
+   "latency_ms": 0.49400003626942635,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_scratch_s0 (INT8)",
+   "acc": 0.8993,
+   "agree": 0.836899995803833,
+   "size_mb": 0.298837,
+   "latency_ms": 0.8454789640381932,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_scratch_s1 (FP32)",
+   "acc": 0.8985,
+   "agree": 0.8357999920845032,
+   "size_mb": 1.169173,
+   "latency_ms": 0.4948539426550269,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_scratch_s1 (INT8)",
+   "acc": 0.8969,
+   "agree": 0.8345000147819519,
+   "size_mb": 0.298837,
+   "latency_ms": 0.8396460907533765,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_scratch_s2 (FP32)",
+   "acc": 0.8973,
+   "agree": 0.835099995136261,
+   "size_mb": 1.169173,
+   "latency_ms": 0.48131251242011786,
+   "params": 288746,
+   "unsupported_ops": []
+  },
+  {
+   "model": "student_scratch_s2 (INT8)",
+   "acc": 0.8969,
+   "agree": 0.8345000147819519,
+   "size_mb": 0.298837,
+   "latency_ms": 0.8471460314467549,
+   "params": 288746,
+   "unsupported_ops": []
+  }
+ ]
+}
