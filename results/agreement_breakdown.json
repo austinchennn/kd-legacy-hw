@@ -1,0 +1,39 @@
+{
+ "teacher_correct": 0.8567000031471252,
+ "student_kd_s0": {
+  "agree_when_teacher_right": 0.936267077922821,
+  "agree_when_teacher_wrong": 0.21981856226921082,
+  "student_right_teacher_wrong": 0.08760000020265579,
+  "student_wrong_teacher_right": 0.05460000038146973
+ },
+ "student_kd_s1": {
+  "agree_when_teacher_right": 0.9421034455299377,
+  "agree_when_teacher_wrong": 0.2267969250679016,
+  "student_right_teacher_wrong": 0.08789999783039093,
+  "student_wrong_teacher_right": 0.04960000142455101
+ },
+ "student_kd_s2": {
+  "agree_when_teacher_right": 0.9395354390144348,
+  "agree_when_teacher_wrong": 0.230286106467247,
+  "student_right_teacher_wrong": 0.08799999952316284,
+  "student_wrong_teacher_right": 0.05180000141263008
+ },
+ "student_scratch_s0": {
+  "agree_when_teacher_right": 0.9436208605766296,
+  "agree_when_teacher_wrong": 0.2072574943304062,
+  "student_right_teacher_wrong": 0.09149999916553497,
+  "student_wrong_teacher_right": 0.04830000177025795
+ },
+ "student_scratch_s1": {
+  "agree_when_teacher_right": 0.9418699741363525,
+  "agree_when_teacher_wrong": 0.20167480409145355,
+  "student_right_teacher_wrong": 0.09160000085830688,
+  "student_wrong_teacher_right": 0.049800001084804535
+ },
+ "student_scratch_s2": {
+  "agree_when_teacher_right": 0.9405859708786011,
+  "agree_when_teacher_wrong": 0.20446614921092987,
+  "student_right_teacher_wrong": 0.09149999916553497,
+  "student_wrong_teacher_right": 0.05090000107884407
+ }
+}

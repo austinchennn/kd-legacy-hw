@@ -26,6 +26,8 @@ Mean ± std over 3 seeds. Per-run numbers are in `results/bench.json`, and train
 
 ![accuracy vs latency](results/kd_legacy.png)
 
+Full experimental design report: [`report/report.pdf`](report/report.pdf).
+
 ## What I found (including the negative results)
 
 1. **The op-set gap is real and cheap to close architecturally.** The Conv-only student runs every op
@@ -36,7 +38,9 @@ Mean ± std over 3 seeds. Per-run numbers are in `results/bench.json`, and train
    on CIFAR-10 (85.7%) is a weaker classifier than the small CNN, so matching its soft labels does not pull
    the student toward the teacher's *behaviour*. It mostly adds noise. For backward compatibility, the goal is
    to reproduce the new model on old hardware, and the ~16% disagreement is exactly the gap to close.
-   Logit KD across an attention→conv architecture gap is not enough to close it.
+   Logit KD across an attention→conv architecture gap is not enough to close it. Splitting agreement by
+   teacher correctness (`analyze.py`) shows that KD raises agreement on the teacher's *mistakes* from 20.45% to 22.56%
+   and slightly lowers it where the teacher is right. In other words, KD copies the teacher's errors.
 3. **INT8 was *slower* than FP32 on this machine** (0.85 ms vs 0.49 ms). Apple Silicon's FP32 CPU path is
    highly optimized, and qnnpack is not tuned for it. Whether INT8 is faster depends on the hardware, which
    is the whole motivation for hardware-aware distillation. The measurement is not a claim about real
